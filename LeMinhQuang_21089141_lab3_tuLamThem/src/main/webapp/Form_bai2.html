@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style_bai2.css">
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<h2>User Registration Form</h2>
+		<form method="post" action="UserController">
+			<div class="form-group">
+				<label for="">First Name</label> <input type="text" name="firstName" id="firstName"
+					placeholder="First Name" required>
+			</div>
+			<div class="form-group">
+				<label for="">Last Name</label> <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+					required>
+			</div>
+			<div class="form-group">
+				<label for="email">Your Email</label> <input name="email" type="email" id="email"
+					placeholder="Your Email" required>
+			</div>
+			<div class="form-group">
+				<label for="re-enter-email">Re-enter Email</label> <input type="email" id="re-enter-email"
+					placeholder="Re-enter Email" required>
+			</div>
+			<div class="form-group">
+				<label for="password">New Password</label> <input name="password" type="password" id="password"
+					placeholder="New Password" required>
+			</div>
+			<div class="form-group">
+				<label>Birthday</label>
+				<div class="date-selectors">
+					<select>
+						<option>Month</option>
+						<!-- More options -->
+					</select> <select>
+						<option>Day</option>
+						<!-- More options -->
+					</select> <select>
+						<option>Year</option>
+						<!-- More options -->
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label> <input type="radio" name="gender" value="female">
+					Female
+				</label> <label> <input type="radio" name="gender" value="male">
+					Male
+				</label>
+			</div>
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+</body>
+
+</html>

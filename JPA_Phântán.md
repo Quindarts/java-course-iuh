@@ -1,7 +1,5 @@
 # Lesson 1: Jakarta Persistence API (JPA)
 
-![alt text](image.png)
-
 # 0. Basic type:
 
 ## Enum

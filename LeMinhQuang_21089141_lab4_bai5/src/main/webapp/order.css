@@ -1,0 +1,182 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	padding: 16px;
+	background-color: white;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+nav {
+	margin-top: 1rem;
+}
+
+.nav-link {
+	color: #007bff;
+	/* Màu chính */
+	text-decoration: none;
+	margin: 0 8px;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+.flex {
+	display: flex;
+}
+
+.sidebar {
+	width: 25%;
+	padding-right: 16px;
+}
+
+.sidebar-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.sidebar-text {
+	color: #6c757d;
+	/* Màu nhạt */
+}
+
+.search-input {
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	padding: 8px;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	gap: 16px;
+	margin-top: 24px;
+	margin-left: 20px;
+	background-color: #ffffff;
+	/* bg-card */
+	padding: 24px;
+	/* p-6 */
+	border-radius: 8px;
+	/* rounded-lg */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.checkout-title {
+	font-size: 1.5rem;
+	/* text-2xl */
+	font-weight: bold;
+	/* font-bold */
+	margin-bottom: 16px;
+	/* mb-4 */
+}
+
+.form-group {
+	margin-bottom: 16px;
+	/* mb-4 */
+}
+
+.form-label {
+	display: block;
+	/* block */
+	font-size: 0.875rem;
+	/* text-sm */
+	font-weight: 500;
+	/* font-medium */
+	color: #6b7280;
+	/* text-muted-foreground */
+}
+
+.form-input {
+	margin-top: 4px;
+	/* mt-1 */
+	display: block;
+	/* block */
+	width: 100%;
+	/* w-full */
+	border: 1px solid #d1d5db;
+	/* border-border */
+	border-radius: 4px;
+	/* rounded-md */
+	padding: 8px;
+	/* p-2 */
+}
+
+.payment-option {
+	display: flex;
+	/* flex */
+	align-items: center;
+	/* items-center */
+}
+
+.payment-input {
+	margin-right: 8px;
+	/* mr-2 */
+}
+
+.payment-label {
+	color: #6b7280;
+	/* text-muted-foreground */
+}
+
+.button-group {
+	display: flex;
+	/* flex */
+	justify-content: space-between;
+	/* justify-between */
+}
+
+.btn {
+	padding: 8px;
+	/* p-2 */
+	border-radius: 4px;
+	/* rounded-md */
+	cursor: pointer;
+	/* cursor-pointer */
+}
+
+.save-btn {
+	background-color: #3b82f6;
+	/* bg-secondary */
+	color: white;
+	/* text-secondary-foreground */
+}
+
+.save-btn:hover {
+	background-color: rgba(59, 130, 246, 0.8);
+	/* bg-secondary/80 */
+}
+
+.cancel-btn {
+	background-color: #e5e7eb;
+	/* bg-muted */
+	color: #6b7280;
+	/* text-muted-foreground */
+}
+
+.cancel-btn:hover {
+	background-color: rgba(229, 231, 235, 0.8);
+	/* bg-muted/80 */
+}
