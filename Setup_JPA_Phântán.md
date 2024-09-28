@@ -94,8 +94,6 @@
 		</properties>
 	</persistence-unit>
 
-
-
 # Extend ~ Abstract Class
 
 	3 Type :
@@ -190,6 +188,7 @@ Demo:
 <br/>
 
 	DAO <br/>
+```java
  public interface CourseDAO extends Remote{
 	public boolean add(Course course) throws RemoteException;
 	public boolean update(Course course) throws RemoteException;
@@ -302,7 +301,6 @@ Demo:
 	}
 
 }
-
   # GSON
   
   <!--
@@ -326,8 +324,8 @@ private static final Gson GSON = new GsonBuilder().create();
 		});
 		return map;
 	}
-
--->
+```
+```java
 <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -349,4 +347,4 @@ private static final Gson GSON = new GsonBuilder().create();
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
-
+```
