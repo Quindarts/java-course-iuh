@@ -96,9 +96,46 @@
 # setup jsp
 
 ```html
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+```
+# setup URL Pattern
+```java
+@WebServlet(urlPatterns = { "/thuoc", "/loai-thuoc" })
+```
+# setup JPA
 
+```java
+@Table(name = "LOAITHUOC")
+@Entity
+public class LoaiThuoc {
+	@Id
+	@Column(name = "MALOAI")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int maLoai;
+	@Column(name = "TENLOAI", columnDefinition = "NVARCHAR(255)")
+	private String tenLoai;
+
+	@OneToMany(mappedBy = "loaiThuoc", cascade = CascadeType.ALL)
+	private List<Thuoc> dsThuoc;
+}
+@Entity
+@Table(name = "THUOC")
+public class Thuoc {
+	@Id
+	@Column(name = "MATHUOC")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int maThuoc;
+	@Column(name = "TENTHUOC", columnDefinition = "NVARCHAR(255)")
+	private String tenThuoc;
+	@Column(name = "GIA")
+	private double gia;
+	@Column(name = "NAMSX")
+	private int namsx;
+
+	@ManyToOne
+	@JoinColumn(name = "MALOAI")
+	private LoaiThuoc loaiThuoc;
+}
 ```
